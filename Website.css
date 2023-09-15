@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo&family=Arimo:wght@400;500&family=Comfortaa:wght@300&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Arimo', sans-serif;
+}
+
+/* SCROLL BAR */
+::-webkit-scrollbar {
+    width: 0.75rem;
+}
+
+::-webkit-scrollbar-track {
+    /* background: #495057; */
+    background: white;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(112, 153, 106);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(145, 145, 145);
+}
+
+.custom-collapse.collapse.navbar-collapse.ms-4.fs-5 ul li a {
+    color: white;
+}
+
+.custom-collapse.collapse.navbar-collapse.ms-4.fs-5 ul li a:hover {
+ color: rgb(108, 221, 108);
+ border-bottom: 0.5px solid green;
+}
+
+/* END OF SCROLL BAR */
+
+/* START NAVIGATION */
+
+.navbar.navbar-expand-lg.bg-body-tertiary-0 {
+    background-color: #405e4c;
+    border-radius: 0% 0% 10% 10%;
+}
+
+.navbar-toggler.mx-4 {
+    background-color:#88bd68;
+}
+
+/* END OF NAVIGATION */
+
+/* IMAGE LOGO */
+
+.bg-img {
+    background-image: url(images/Shekels.jpg);
+    min-height: 80vh;
+    max-width: 100%;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.bg-img.mt-5.mb-5 {
+    margin-right: 40px;
+}
+
+/* END OF IMAGE LOGO */
+
+/* START MISSION AND VISION */
+
+.container-fluid.pt-5.text-center {
+    margin-top: 80px;
+    background-color: #405e4c;
+    color: white;
+    border-radius: 20% 20% 20% 20%;
+    
+}
+
+/* END OF MISSION VISION */
+
+/* START TEAM */
+.mt-5.text-center img {
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid #405e4c;
+    padding: 10px;
+    /* object-fit: cover;
+    top: 0;
+    left: 0; */
+}
+
+    .container img {
+        border-radius: 50%;
+        overflow: hidden;
+        border: 5px solid #405e4c;
+        padding: 10px;
+    }
+
+/* END TEAM */
+
+.footer.container-fluid.text-center {
+    background-color: #405e4c;
+    margin: 0;
+    padding: 0;
+}
+
+.footer.container-fluid.text-center i {
+    color: white;
+}
