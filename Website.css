@@ -162,7 +162,7 @@ body {
     left: 0; */
 }
 
-.container.mt-5.scroll-animation-bottom {
+.container.mt-5 {
   overflow: hidden;
 }
 
