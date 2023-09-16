@@ -78,19 +78,19 @@ body {
     height: 5px;
     background-color: #405e4c; /* Circle color */
     /* border-radius: 50%; Make it a circle */
-    animation: moveCircle 2.5s linear infinite; /* Apply the animation */
+    animation: moveLine 2.5s linear infinite; /* Apply the animation */
   }
   
   /* Define the animation keyframes for the circle */
-  @keyframes moveCircle {
+  @keyframes moveLine {
     0% {
-      left: 500px; /* Initial position of the circle, adjust as needed */
+      left: 380px; /* Initial position of the circle, adjust as needed */
     }
     50% {
-      left: calc(100% - 600px); /* Move the circle to the right */
+      left: calc(100% - 500px); /* Move the circle to the right */
     }
     100% {
-      left: 500px; /* Return the circle to the initial position */
+      left: 380px; /* Return the circle to the initial position */
     }
   }
 
@@ -98,32 +98,34 @@ body {
 
 /* START MISSION AND VISION */
 
-.container-fluid.pt-5.text-center {
+
+.container-fluid.pt-5 {
+    padding-bottom: 50px;
     margin-top: 80px;
     background-color: #405e4c;
     color: white;
-    border-radius: 20% 20% 20% 20%;
+    border-radius: 10%;
+    overflow: hidden;
 }
 
-
-.scroll-animation-top {
-    opacity: 0;
-    transform: translateY(-100%);
-    transition: opacity 1s ease, transform 1s ease;
-  }
-  
-  .scroll-animation-top.active {
-    opacity: 1;
-    transform: translateY(0);
-  }
-
-  .scroll-animation-left {
+.scroll-animation-left {
     opacity: 0;
     transform: translateX(-100%);
     transition: opacity 0.5s ease, transform 2s ease;
   }
   
   .scroll-animation-left.active {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  .scroll-animation-right {
+    opacity: 0;
+    transform: translateX(500%);
+    transition: opacity 0.5s ease, transform 2s ease;
+  }
+  
+  .scroll-animation-right.active {
     opacity: 1;
     transform: translateX(0);
   }
@@ -158,6 +160,21 @@ body {
     /* object-fit: cover;
     top: 0;
     left: 0; */
+}
+
+.container.mt-5.scroll-animation-bottom {
+  overflow: hidden;
+}
+
+.scroll-animation-bottom {
+  opacity: 0;
+  transform: translateY(100%);
+  transition: opacity 0.5s ease, transform 2s ease;
+}
+
+.scroll-animation-bottom.active{
+  opacity: 1;
+  transform: translateY(0);
 }
 
     .container img {
