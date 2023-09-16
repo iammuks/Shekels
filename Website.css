@@ -60,11 +60,39 @@ body {
     background-position: 50%;
     background-repeat: no-repeat;
     background-size: contain;
+    position: relative;
 }
 
 .bg-img.mt-5.mb-5 {
     margin-right: 40px;
 }
+
+/* Define the animated circle */
+.bg-img.mt-5.mb-5::before {
+    content: ""; /* Create a pseudo-element */
+    position:absolute;
+    margin-bottom: 200px;
+    bottom: 0;
+    left: 0;
+    width: 100px; /* Adjust the size of the circle */
+    height: 5px;
+    background-color: #405e4c; /* Circle color */
+    /* border-radius: 50%; Make it a circle */
+    animation: moveCircle 2.5s linear infinite; /* Apply the animation */
+  }
+  
+  /* Define the animation keyframes for the circle */
+  @keyframes moveCircle {
+    0% {
+      left: 500px; /* Initial position of the circle, adjust as needed */
+    }
+    50% {
+      left: calc(100% - 600px); /* Move the circle to the right */
+    }
+    100% {
+      left: 500px; /* Return the circle to the initial position */
+    }
+  }
 
 /* END OF IMAGE LOGO */
 
@@ -75,9 +103,48 @@ body {
     background-color: #405e4c;
     color: white;
     border-radius: 20% 20% 20% 20%;
-    
 }
 
+
+.scroll-animation-top {
+    opacity: 0;
+    transform: translateY(-100%);
+    transition: opacity 1s ease, transform 1s ease;
+  }
+  
+  .scroll-animation-top.active {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .scroll-animation-left {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: opacity 0.5s ease, transform 2s ease;
+  }
+  
+  .scroll-animation-left.active {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  
+  /* Define the border animation keyframes */
+  @keyframes borderPulse {
+    0% {
+      border-color: #ff0000; /* Red border at the beginning */
+      transform: scale(1);
+    }
+    50% {
+      border-color: #00ff00; /* Green border halfway through */
+      transform: scale(1.1);
+    }
+    100% {
+      border-color: #0000ff; /* Blue border at the end */
+      transform: scale(1);
+    }
+  }
+  
 /* END OF MISSION VISION */
 
 /* START TEAM */
@@ -86,6 +153,8 @@ body {
     overflow: hidden;
     border: 5px solid #405e4c;
     padding: 10px;
+    border: 5px solid transparent; /* Start with a transparent border */
+        animation: borderPulse 3s infinite; /* Apply the animation */
     /* object-fit: cover;
     top: 0;
     left: 0; */
@@ -96,7 +165,24 @@ body {
         overflow: hidden;
         border: 5px solid #405e4c;
         padding: 10px;
+        border: 5px solid transparent; /* Start with a transparent border */
+        animation: borderPulse 2s infinite; /* Apply the animation */
     }
+
+    @keyframes borderPulse {
+        0% {
+          border-color: #91cfaa; /* Red border at the beginning */
+          transform: scale(1);
+        }
+        50% {
+          border-color: #1a7940; /* Green border halfway through */
+          transform: scale(1.1);
+        }
+        100% {
+          border-color: #405e4c; /* Blue border at the end */
+          transform: scale(1);
+        }
+      }
 
 /* END TEAM */
 
@@ -108,4 +194,10 @@ body {
 
 .footer.container-fluid.text-center i {
     color: white;
+}
+
+.footer.container-fluid.text-center i:hover{
+    size: 50px;
+    color: green;
+    transition: 1s;
 }
