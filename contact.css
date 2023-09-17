@@ -35,7 +35,7 @@ body {
     }
   }
 
-.container-fluid.text-center.mt-5 {
+.container-fluid.text-center {
     color: white;
 }
 .col-md-3.ms-auto {
@@ -73,6 +73,17 @@ body {
   .scroll-animation-left.active{
     opacity: 1;
     transform: translateX(0);
+  }
+
+  .scroll-animation-bottom {
+    opacity: 0;
+    transform: translateY(100%);
+    transition: opacity 0.5s ease, transform 2s ease;
+  }
+  
+  .scroll-animation-bottom.active{
+    opacity: 1;
+    transform: translateY(0);
   }
 
                                             /* FOOTER SECTION */

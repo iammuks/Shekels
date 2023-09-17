@@ -26,14 +26,14 @@
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias, labore.</p>
     </div> -->
 
-    <div class="container-fluid text-center mt-5">
+    <div class="container-fluid text-center">
         <div class="row">
             <div class="col-md-3 ms-auto mt-5 py-5 scroll-animation-right">
                 <i class="fa-solid fa-phone-volume mt-3 fs-3"></i>
                 <h3 class="mt-3">Phone</h3>
                 <p class="mt-3 fs-4">Landline <br> (00) 0000-0000</p>
             </div>
-            <div class="col-md-3 ms-auto mt-5 py-5">
+            <div class="col-md-3 ms-auto mt-5 py-5 scroll-animation-bottom">
                 <i class="fa-solid fa-envelope mt-3 fs-3"></i>
                 <h3 class="mt-3">E-mail</h3>
                 <p class="mt-3 fs-4">If you have inquiry just email us! <br> shekels123@gmail.com</p>
@@ -99,4 +99,29 @@
   // Initially trigger the animation for elements in view on page load
   window.addEventListener('DOMContentLoaded', handleScrollAnimation);
       </script>
+
+
+      <script>
+        function handleScrollAnimation() {
+          const elements = document.querySelectorAll('.scroll-animation-bottom');
+        
+          elements.forEach((element) => {
+            const elementTop = element.getBoundingClientRect().top;
+            const windowHeight = window.innerHeight;
+        
+            if (elementTop < windowHeight * 0.75) {
+              element.classList.add('active');
+            }
+          });
+        }
+  
+  
+        // Listen for the scroll event and invoke the animation function
+  window.addEventListener('scroll', handleScrollAnimation);
+  
+  // Initially trigger the animation for elements in view on page load
+  window.addEventListener('DOMContentLoaded', handleScrollAnimation);
+      </script>
+
+
 </body>
