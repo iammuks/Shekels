@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo&family=Arimo:wght@400;500&family=Comfortaa:wght@300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arimo', sans-serif;
+}
+
+.navbar.navbar-expand-lg.bg-body-tertiary-0 {
+    background-color: #405e4c;
+}
+.nav.container-fluid img {
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid #405e4c;
+    padding: 10px;
+    border: 5px solid transparent; /* Start with a transparent border */
+    animation: borderPulse 2s infinite; /* Apply the animation */
+}
+
+@keyframes borderPulse {
+    0% {
+      border-color: #68f887; /* Red border at the beginning */
+      transform: scale(1);
+    }
+    50% {
+      border-color: #5dd176; /* Green border halfway through */
+      transform: scale(1.1);
+    }
+    100% {
+      border-color: #248f4b; /* Blue border at the end */
+      transform: scale(1);
+    }
+  }
+
+.container-fluid.text-center.mt-5 {
+    color: white;
+}
+.col-md-3.ms-auto {
+    background-color: #405e4c;
+    border-radius: 20%;
+    
+}
+.col-md-3.mx-auto{
+    background-color: #405e4c;
+    border-radius: 20%;
+}
+
+.row {
+    overflow: hidden;
+}
+
+.scroll-animation-right {
+    opacity: 0;
+    transform: translateX(500%);
+    transition: opacity 0.5s ease, transform 2s ease;
+  }
+  
+  .scroll-animation-right.active{
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+
+  .scroll-animation-left {
+    opacity: 0;
+    transform: translateX(-500%);
+    transition: opacity 0.5s ease, transform 2s ease;
+  }
+  
+  .scroll-animation-left.active{
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+                                            /* FOOTER SECTION */
+
+.footer.container-fluid.text-center {
+    background-color: #405e4c;
+    margin: 0;
+    padding: 0;
+}
+
+.footer.container-fluid.text-center i {
+    color: white;
+}
+
+.footer.container-fluid.text-center i:hover{
+    size: 50px;
+    color: green;
+    transition: 1s;
+}

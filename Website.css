@@ -27,6 +27,8 @@ body {
     background: rgb(145, 145, 145);
 }
 
+/* END OF SCROLL BAR */
+
 .custom-collapse.collapse.navbar-collapse.ms-4.fs-5 ul li a {
     color: white;
 }
@@ -36,7 +38,7 @@ body {
  border-bottom: 0.5px solid green;
 }
 
-/* END OF SCROLL BAR */
+
 
 /* START NAVIGATION */
 
@@ -162,7 +164,7 @@ body {
     left: 0; */
 }
 
-.container.mt-5 {
+.container-fluid.mt-5 {
   overflow: hidden;
 }
 
@@ -177,7 +179,7 @@ body {
   transform: translateY(0);
 }
 
-    .container img {
+    .container-fluid img {
         border-radius: 50%;
         overflow: hidden;
         border: 5px solid #405e4c;
