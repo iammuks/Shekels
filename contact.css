@@ -38,7 +38,7 @@ body {
 .container-fluid.text-center {
     color: white;
 }
-.col-md-3.ms-auto {
+.col-md-3.mx-auto {
     background-color: #405e4c;
     border-radius: 20%;
     
@@ -86,6 +86,12 @@ body {
     transform: translateY(0);
   }
 
+
+  .col-md-9.mx-auto.g-map p {
+    border: 5px solid rgb(81, 141, 86);
+  }
+
+
                                             /* FOOTER SECTION */
 
 .footer.container-fluid.text-center {
@@ -95,6 +101,7 @@ body {
 }
 
 .footer.container-fluid.text-center i {
+    margin-top: 20px;
     color: white;
 }
 
