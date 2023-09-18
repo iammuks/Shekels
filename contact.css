@@ -89,6 +89,7 @@ body {
 
   .col-md-9.mx-auto.g-map p {
     border: 5px solid rgb(81, 141, 86);
+    padding: 0 50px 0 50px;
   }
 
 
