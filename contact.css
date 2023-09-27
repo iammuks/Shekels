@@ -8,6 +8,28 @@ body {
     font-family: 'Arimo', sans-serif;
 }
 
+/* SCROLL BAR */
+::-webkit-scrollbar {
+  width: 0.75rem;
+}
+
+::-webkit-scrollbar-track {
+  /* background: #495057; */
+  background: white;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(112, 153, 106);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(145, 145, 145);
+}
+
+/* END OF SCROLL BAR */
+
+
 .navbar.navbar-expand-lg.bg-body-tertiary-0 {
     background-color: #405e4c;
 }
