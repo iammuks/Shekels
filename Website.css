@@ -179,7 +179,7 @@ body {
   transform: translateY(0);
 }
 
-    .container-fluid.mt-5.row.text-center img {
+    .container-fluid.mt-5 img {
         border-radius: 50%;
         overflow: hidden;
         border: 5px solid #405e4c;
